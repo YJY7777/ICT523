@@ -1,128 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="main.css">
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: red; 
+  background-image: linear-gradient(to right, rgb(186, 239, 94) , rgb(213, 68, 49));
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.topnav {
   overflow: hidden;
-  background-color: #615151;
+  background-color: #d3b84f;
+  width: 100%; /* 设置导航栏宽度为100% */
+  text-align: center; /* 将导航栏文本居中 */
+  margin: 0 auto; /* 让导航栏水平居中 */
 }
-
-li {
-  float: center;
+.topnav a {
+  display: inline-block; /* 将每个选项显示为inline-block元素 */
+  padding: 10px 20px; /* 设置选项的内边距 */
 }
-
-li a {
-  display: block;
-  color: rgba(255, 255, 255, 0.364);
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.leftcolumn {   
+  float: middle;
+  width: 100%;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 97.7%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background: #d3b84f;
+  margin-top: 20px;
 }
-
-li a:hover {
-  background-color: #111;
+.screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
-.right {
-  position: absolute;
-  right: 0px;
-  width: 200px;
-  border: 3px solid #5f5f5f;
-  padding: 10px;
-}
-.left {
-  position: absolute;
-  left: 0px;
-  width: 200px;
-  border: 3px solid #5f5f5f;
-  padding: 10px;
-}
-body {
-  background-color: rgb(202, 214, 165);
-}
-
-h1 {
-  color: rgb(48, 47, 48);
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
-    <ul>
-        <li style="float:center"><a href="https://yjy7777.github.io/ICT523/CSS%20page1.html">HOME</a></li>
-        <li style="float:center"><a href="https://yjy7777.github.io/ICT523/CSS%20page3.html">Page3</a></li>
-      
-      </ul>
-  <h1 style="font-size:300%;">Web Design Template</h1> <!-- title -->
-  <div class="center">
-  <img src="https://i.postimg.cc/QCt2vG8F/01ce5857f74c26a84a0e282b345bd6-png-1280w-1l-2o-100sh.png">
-  </style>
-  <img src="https://i.postimg.cc/VvSY9vxt/01d99156308bad32f875570101047e-jpg-1280w-1l-2o-100sh.jpg">
-</style>
-<img src="https://i.postimg.cc/Pq3J1gCB/012fe05cd4f12ca80121416810dbd6-jpg-1280w-1l-2o-100sh.jpg">
-</style>
-<img src="https://i.postimg.cc/Rhf05qgB/013d4d5874943fa801219c7764f32e-jpg-1280w-1l-2o-100sh.jpg">
-</style>
-<img src="https://i.postimg.cc/Hs9pQqKB/0143cc56c9c31232f875520f07d85f-jpg-1280w-1l-2o-100sh.jpg">
-</style>
-<img src="https://i.postimg.cc/xjKYQr0n/01094d5b3d6f41a80120b9596ec4ef-jpg-1280w-1l-2o-100sh.jpg"> 
-</style>
-<img src="https://i.postimg.cc/t4sMXPhW/moban7147-s.jpg">
-</style>
-<img src="https://i.postimg.cc/BnRwt6gy/moban7148.jpg">
-</style>
-<img src="https://i.postimg.cc/QC6fDxCf/R-C-1.jpg">
-</style>
-<img src="https://i.postimg.cc/htQ2FnB0/R-C.jpg">
-
-
-</div> 
-</body>
-</html><!-- Table content editing -->
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>CSS 网页布局 - 菜鸟教程(runoob.com)</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-
-
-/* 响应式布局 - 宽度小于600px时设置上下布局 */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+.screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
     width: 100%;
   }
 }
-
-/* 底部样式 */
-.footer {
-  background-color: #d3b84f;
-  padding: 10px;
-  text-align: center;
-}
 </style>
 </head>
 <body>
 
-<div class="footer">
-  <p>884259309@qq.com</p >
+<!-- This is my Heading- -->
+<div class="header">
+  <h1>Sample Websites</h1>
 </div>
-  
-</body>
-</html>
+
+<!-- This is my Links- -->
+<div class="card">
+  <div class="topnav">
+    <a href="https://yjy7777.github.io/ICT523/CSS%20page1.html">HOME</a>
+    <a href="https://yjy7777.github.io/ICT523/CSS%20page3.html">Page3</a>
+  </div>
+</div>
+
+<!-- This is my Images- -->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+    <h2>Example</h2>
+    <div class="fakeimg" style="height:800px">
+    <img src="https://uicookies.com/wp-content/uploads/2019/03/sensive-free-html-website-templates.jpg" width="300" height="250">
+    <img src="https://www.fotolip.com/wp-content/uploads/2016/05/Website-Templates-8.jpg" width="300" height="250">
+    <img src="https://formoid.com/articles/data/upload/2018/08/sample-website-templates.jpg" width="300" height="250">
+    <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/inheritingthenations-education-website-wix-example.jpg" width="300" height="250">
+    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.db3daa385057d3d0f894572167c1b582?rik=RFnNC179FgWvLw&riu=http%3a%2f%2fblog.outsourcingnepal.com%2fwp-content%2fuploads%2f2011%2f07%2fsocial_exp.png&ehk=PIt0f6d8JXO76eoDtpqrUxKzfNEYGNKAzHC1O%2fzzKEQ%3d&risl=&pid=ImgRaw&r=0" width="300" height="250">
+    <img src="https://ts1.cn.mm.bing.net/th/id/R-C.4587e071d2b10a1a928bb18ff8229096?rik=o9fYKtVG0p91bQ&riu=http%3a%2f%2fwww.pbwebsolution.com%2fwebDesign%2fmendiola.jpg&ehk=ku9XCW2tkO%2bvXoGM5o3G9rn8q87Ikw3mjU4QRpJJpv4%3d&risl=&pid=ImgRaw&r=0" width="300" height="250">
+    <img src="https://uicookies.com/wp-content/uploads/2019/10/free-travel-agency-website-templates.jpg" width="300" height="250">
+    <img src="https://cs.thomsonreuters.com/web-builder/i/standard_template_a_to_z.jpg" width="300" height="250">
+    <img src="https://uicookies.com/wp-content/uploads/2019/03/sensive-free-html-website-templates.jpg" width="300" height="250">
+    <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.yLvtiuUVoM9pFWDy7voCYAHaET?pid=ImgDet&rs=1" width="300" height="250">
+    </div>
+</div>
+
+<!-- This is my Paragraph- -->
+<div class="card">
+    <h3>View</h3>
+    <p>Design 1: Using a combination of text and pictures.</p>
+    <p>Design 2: Place the picture above and the text below.</p>
+    <p>Design 3: Place the picture at the top and bottom, with the text sandwiched between them.</p>
+    <p>Design 4: Place the picture above and center the text below.</p>
+    <p>Design 5: Use the picture as the background, with the text listed in the middle.</p>
+    <p>Design 6: With a background color, pictures and text centered in the middle.</p>
+    <p>Design 7: The picture is at the top, and the text is listed below.</p>
+    <p>Design 8: Put a picture on the top and combine the picture and text below.</p>
+    <p>Design 9: Place a picture at the top and combine the picture and text below.</p>
+    <p>Design 10: There is a background image. Place pictures on top and text below.</p>
+ </div>
+ 
+ <!-- This is my Footer- -->
+ <div class="card">
+   <div class="footer">
+    <p>884259309@qq.com</p >
+   </div>
+ </div>
+ 
+ </body>
+ </html>
